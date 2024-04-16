@@ -57,23 +57,30 @@ $(() => {
 		// main: null
 	}
 
-	// Показать контент 
-	$(".link-more").click(function (e) {
-		e.preventDefault();
-		$(".vacancy_item").removeClass("hide");
-		$(".link-more").addClass("active");
-	});
 
-
-
-	$('select').on('change', function () {
-		if (this.value == 6) {
-			$('.select-input').css('display', 'block');
+	const swiper = new Swiper('.client_items .swiper', {
+		slidesPerView: 3,
+		allowTouchMove: false,
+		spaceBetween: 10,
+		breakpoints: {
+		  320: {
+			slidesPerView: 1,
+			spaceBetween: 20
+		  },
+		  480: {
+			slidesPerView: 1,
+			spaceBetween: 30
+		  },
+		  640: {
+			slidesPerView: 2,
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+			  },
+			spaceBetween: 40
+		  }
 		}
-		else {
-			$('.select-input').css('display', 'none');
-		}
-	});
+	  })
 
 
 
