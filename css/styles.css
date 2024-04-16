@@ -1045,3 +1045,161 @@ header .menu .item + .item {
     max-width: 610px;
     margin: 0 auto;  
 }
+.map_wrap {
+    position: relative;
+    overflow: hidden;
+    width: 560px;
+    height: 491px;
+    margin-left: auto;
+    transform: translateZ(0);
+    border-radius: 40px;
+    flex-shrink: 0;
+}
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ymaps-2-1-79-ground-pane {
+	filter: grayscale(1);
+	-ms-filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+}
+.callback_contacts {
+    padding: 20px;
+    border-radius: 20px;
+    background: rgb(68, 68, 68);
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.callback_phone {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.callback_adress {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.25;
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+    gap: 10px;
+}
+.callback_graffic {
+    color: rgb(143, 255, 0);
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 1.3;   
+}
+.callback {
+    padding: 80px 0 100px;
+    background: #FF0090;
+}
+.callback_wrap {
+    display: flex;
+    gap: 40px;
+}
+.callback_info {
+    width: calc(100% - 600px);
+    width: 100%;
+}
+.callback_title {
+    margin-bottom: 40px;
+    color: #fff;
+}
+.callback .line {
+    width: 100%;
+    margin-bottom: 16px;
+}
+.callback .line .field {
+    width: 100%;
+    display: block;
+}
+.callback .line .field input {
+    width: 100%;
+    height: 60px;
+    padding: 0 30px;
+    border-radius: 40px;
+    background: rgb(255, 255, 255);
+    border: none;
+    color: #131313;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.25;
+    font-family: var(--font_family);
+}
+.callback .line .field textarea {
+    width: 100%;
+    height: 60px;
+    resize: none;
+    padding: 0 30px;
+    border-radius: 40px;
+    background: rgb(255, 255, 255);
+    border: none;
+    color: #CBCBCB;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 60px;
+    font-family: var(--font_family);
+    display: block;
+}
+.callback .line .field input::placeholder {
+	color: #CBCBCB;
+}
+.callback .line .field input::-webkit-input-placeholder {
+	color: #CBCBCB;
+}
+.callback .line .field input::-moz-placeholder {
+	color: #CBCBCB;
+}
+.callback .line .field input:-moz-placeholder {
+	color: #CBCBCB;
+}
+.callback .line .field input:-ms-input-placeholder {
+	color: #CBCBCB;
+}
+.callback .line .field textarea::placeholder {
+	color: #CBCBCB;
+}
+.callback .line .field textarea::-webkit-input-placeholder {
+	color: #CBCBCB;
+}
+.callback .line .field textarea::-moz-placeholder {
+	color: #CBCBCB;
+}
+.callback .line .field textarea:-moz-placeholder {
+	color: #CBCBCB;
+}
+.callback .line .field textarea:-ms-input-placeholder {
+	color: #CBCBCB;
+}
+.callback button {
+    border-radius: 63px;
+    background: rgb(143, 255, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: rgb(19, 19, 19);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    width: 297px;
+    height: 61px;
+    text-decoration: none;
+    margin-top: 30px;
+}
