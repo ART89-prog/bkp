@@ -939,6 +939,7 @@ header .menu .item + .item {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .swiper {
     padding-bottom: 40px;
 }
@@ -1075,8 +1076,9 @@ header .menu .item + .item {
 	-o-filter: grayscale(1);
 }
 .ymaps-2-1-79-map ymaps {
-    background-image: linear-gradient(0deg, black, transparent);
+    background-image: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.7) 100%, rgba(0,0,0,0.7) 100%);
     background-blend-mode: exclusion, hard-light;
+    z-index: -1;
 }
 .ymaps-2-1-79-map-copyrights-promo,
 .ymaps-2-1-79-controls__toolbar {
@@ -1294,11 +1296,15 @@ footer {
     border-radius: 10px;
 }
 .fancybox__content>.carousel__button.is-close {
-    top: 5px;
-    right: 5px;
+    top: 15px;
+    right: 15px;
 }
 .fancybox__content {
-    padding: 50px 20px 20px;
+    padding: 25px 20px 20px;
+}
+.modal_logo {
+    margin-bottom: 30px;
+    display: block;
 }
 .modal-title {
     font-family: 'druk';
@@ -1340,5 +1346,8 @@ footer {
 }
 .modal_button:hover {
     background: #7ddb05;
+}
+.swiper-pagination {
+    display: none;
 }
 
