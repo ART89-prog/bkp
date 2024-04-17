@@ -60,7 +60,7 @@ $(() => {
 
     const swiper = new Swiper('.client_items .swiper', {
         slidesPerView: 3,
-        allowTouchMove: false,
+        // allowTouchMove: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -70,12 +70,12 @@ $(() => {
             320: {
                 slidesPerView: 2,
                 spaceBetween: 20,
-                allowTouchMove: true
+                // allowTouchMove: true
             },
             480: {
                 slidesPerView: 2,
                 spaceBetween: 30,
-                allowTouchMove: true
+                // allowTouchMove: true
             },
             767: {
                 slidesPerView: 3,                
@@ -87,7 +87,7 @@ $(() => {
 
     const swiper2 = new Swiper('.client_items2 .swiper', {
         slidesPerView: 3,
-        allowTouchMove: false,
+        // allowTouchMove: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -97,12 +97,12 @@ $(() => {
             320: {
                 slidesPerView: 2,
                 spaceBetween: 20,
-                allowTouchMove: true
+                // allowTouchMove: true
             },
             480: {
                 slidesPerView: 2,
                 spaceBetween: 30,
-                allowTouchMove: true
+                // allowTouchMove: true
             },
             767: {
                 slidesPerView: 3,               
@@ -114,7 +114,7 @@ $(() => {
 
     const swiper3 = new Swiper('.client_items3 .swiper', {
 		slidesPerView: 3,
-		allowTouchMove: false,
+		// allowTouchMove: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -124,12 +124,12 @@ $(() => {
 		  320: {
 			slidesPerView: 2,
 			spaceBetween: 20,
-            allowTouchMove: true
+            // allowTouchMove: true
 		  },
 		  480: {
 			slidesPerView: 2,
 			spaceBetween: 30,
-            allowTouchMove: true            
+            // allowTouchMove: true            
 		  },
 		  767: {
 			slidesPerView: 3,		
