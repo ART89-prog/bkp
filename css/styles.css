@@ -597,7 +597,7 @@ header .menu .item + .item {
     width: 20px;
     height: 20px;
     left: 0;
-    top: 4px;
+    top: 0px;
     background: url(../images/list1.svg);
 }
 
@@ -692,7 +692,7 @@ header .menu .item + .item {
     width: 20px;
     height: 20px;
     left: 0;
-    top: 1px;
+    top: 0px;
     background: url(../images/list2.svg);
 }
 
