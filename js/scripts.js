@@ -144,12 +144,10 @@ $(() => {
           },
 		breakpoints: {
 		  320: {
-			slidesPerView: 1,
-			spaceBetween: 20
+			slidesPerView: 1
 		  },
 		  480: {
-			slidesPerView: 2,
-			spaceBetween: 30
+			slidesPerView: 1
 		  },
 		  640: {
 			slidesPerView: 1,
@@ -164,7 +162,7 @@ $(() => {
 
 
 
-    // $('input[type=tel]').inputmask('+7 (999) 999-99-99')
+    $('input[type=tel]').inputmask('+7 (999) 999-99-99')
 
 
 

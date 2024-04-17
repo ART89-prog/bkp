@@ -1,6 +1,27 @@
 @media print, (max-width: 1187px) {
 
 
+    .first-section_img {
+        width: 450px;
+        height: 189px;
+    }
+    .first-section_info {
+        width: calc(100% - 480px);
+    }
+    .problem_img {
+        width: 450px;
+        height: 282px;
+    }
+    .problem_info {
+        width: calc(100% - 480px);
+    }
+    .benefits_img {
+        width: 450px;
+        height: 299px;
+    }
+    .benefits_info {
+        width: calc(100% - 480px);
+    }
 
 
 

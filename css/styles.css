@@ -101,9 +101,9 @@ input[type=number] {
 
 @font-face {
     font-family: 'druk';
-    src: local('druktextwidecyr-mediumr'), local('druktextwidecyr-medium'),
-        url('../fonts/druktextwidecyr-medium.woff') format('woff'),
-        url('../fonts/druktextwidecyr-medium.ttf') format('truetype');
+    src: local('druktextwidecyr-bold'), local('druktextwidecyr-bold'),
+        url('../fonts/druktextwidecyr-bold.woff') format('woff'),
+        url('../fonts/druktextwidecyr-bold.ttf') format('truetype');
     }
 
 
@@ -330,7 +330,7 @@ header .close_btn img {
     justify-content: space-between;
 }
 header {
-    padding: 30px 0 40px;
+    padding: 30px 0 35px;
     position: relative;
 }
 header .menu {
@@ -363,17 +363,18 @@ header .menu .item:hover a {
     font-style: normal;
     font-weight: 400;
     line-height: 1.25;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
     text-align: end;
 }
 .header_logo {
     display: flex;
     align-items: end;
     gap: 18px;
-    font-size: 15px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.25;
+    margin-top: -5px;
 }
 header .menu .item + .item {
     margin-left: 30px;
@@ -396,6 +397,10 @@ header .menu .item + .item {
     display: flex;
     align-items:center;
     justify-content: center;
+    transition: all 0.4s;
+}
+.header_contact-whatsapp:hover {
+    transform: translateY(-7px);
 }
 .header_contact-telegram {
     text-decoration: none; 
@@ -407,6 +412,10 @@ header .menu .item + .item {
     display: flex;
     align-items:center;
     justify-content: center;
+    transition: all 0.4s;
+}
+.header_contact-telegram:hover {
+    transform: translateY(-7px);
 }
 .header_contact-phone {
     font-size: var(--font_size);
@@ -414,6 +423,16 @@ header .menu .item + .item {
     line-height: 1.25;
     text-decoration: none; 
     color: #131313;
+    transition: all .4s;
+}
+.header_contact-phone:hover {
+    text-decoration: underline;
+}
+.header_contact-mob {
+    display: none;
+}
+.header_logo-mob {
+    display: none;
 }
 
 
@@ -461,6 +480,10 @@ header .menu .item + .item {
     height: 56px;
     text-decoration: none;
     margin-bottom: 30px;
+    transition: all 0.4s;
+}
+.first-section_btn:hover {
+    background: #7ddb05;
 }
 .first-section_desc {
     color: var(--text_color);
@@ -507,6 +530,9 @@ header .menu .item + .item {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+.first-section_img-mob {
+    display: none;
 }
 
 
@@ -675,12 +701,6 @@ header .menu .item + .item {
 .block3 {
     margin-bottom: 84px;
 }
-.step {
-}
-.block3 {
-}
-.cont {
-}
 .step_title {
     text-align: center;
     margin-bottom: 50px;
@@ -786,7 +806,7 @@ header .menu .item + .item {
 .training_item {
     border-radius: 40px;
     background: rgb(255, 242, 249);
-    padding: 30px 40px 30px 0;
+    padding: 28px 40px 30px 0;
     display: flex;
     gap: 20px;
 }
@@ -902,13 +922,6 @@ header .menu .item + .item {
     letter-spacing: -1%;
     text-align: center;
 }
-.client_items,
-.client_items2 {
-    margin-bottom: 40px;    
-}
-.client_items3 {
-    margin-bottom: 50px;
-}
 .client_item {
     min-height: 150px;
     display: flex;
@@ -927,7 +940,7 @@ header .menu .item + .item {
     margin-bottom: 30px;
 }
 .swiper {
-    padding-bottom: 35px;
+    padding-bottom: 40px;
 }
 .swiper-horizontal>.swiper-pagination-bullets, 
 .swiper-pagination-bullets.swiper-pagination-horizontal, 
@@ -1016,23 +1029,26 @@ header .menu .item + .item {
     align-items: center;
     color: var(--text_color);
     font-size: var(--font_size);
-    font-weight: 600;
+    font-weight: 700;
     line-height: 20px;
     text-align: center;
     width: 313px;
     height: 58px;
     text-decoration: none;
     margin: 50px auto 20px;
+    transition: all 0.4s;
+}
+.client_btn:hover {
+    background: #7ddb05;
 }
 .client_text {
     color: var(--text_color);
-    font-size: var(--font_size);
+    font-size: 20px;
     font-weight: 300;
     line-height: 1.25;
-    letter-spacing: -1%;
     text-align: center;  
     max-width: 610px;
-    margin: 0 auto;  
+    margin: 0 auto 50px;  
 }
 .map_wrap {
     position: relative;
@@ -1109,15 +1125,15 @@ header .menu .item + .item {
     margin-bottom: 40px;
     color: #fff;
 }
-.callback .line {
+form .line {
     width: 100%;
     margin-bottom: 16px;
 }
-.callback .line .field {
+form .line .field {
     width: 100%;
     display: block;
 }
-.callback .line .field input {
+form .line .field input {
     width: 100%;
     height: 60px;
     padding: 0 30px;
@@ -1130,7 +1146,7 @@ header .menu .item + .item {
     line-height: 1.25;
     font-family: var(--font_family);
 }
-.callback .line .field textarea {
+form .line .field textarea {
     width: 100%;
     height: 60px;
     resize: none;
@@ -1145,34 +1161,34 @@ header .menu .item + .item {
     font-family: var(--font_family);
     display: block;
 }
-.callback .line .field input::placeholder {
+form .line .field input::placeholder {
 	color: #CBCBCB;
 }
-.callback .line .field input::-webkit-input-placeholder {
+form .line .field input::-webkit-input-placeholder {
 	color: #CBCBCB;
 }
-.callback .line .field input::-moz-placeholder {
+form .line .field input::-moz-placeholder {
 	color: #CBCBCB;
 }
-.callback .line .field input:-moz-placeholder {
+form .line .field input:-moz-placeholder {
 	color: #CBCBCB;
 }
-.callback .line .field input:-ms-input-placeholder {
+form .line .field input:-ms-input-placeholder {
 	color: #CBCBCB;
 }
-.callback .line .field textarea::placeholder {
+form .line .field textarea::placeholder {
 	color: #CBCBCB;
 }
-.callback .line .field textarea::-webkit-input-placeholder {
+form .line .field textarea::-webkit-input-placeholder {
 	color: #CBCBCB;
 }
-.callback .line .field textarea::-moz-placeholder {
+form .line .field textarea::-moz-placeholder {
 	color: #CBCBCB;
 }
-.callback .line .field textarea:-moz-placeholder {
+form .line .field textarea:-moz-placeholder {
 	color: #CBCBCB;
 }
-.callback .line .field textarea:-ms-input-placeholder {
+form .line .field textarea:-ms-input-placeholder {
 	color: #CBCBCB;
 }
 .callback button {
@@ -1191,6 +1207,10 @@ header .menu .item + .item {
     height: 61px;
     text-decoration: none;
     margin-top: 30px;
+    transition: all 0.4s;
+}
+.callback button:hover {
+    background: #7ddb05;
 }
 
 
@@ -1219,6 +1239,11 @@ footer {
     font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.25;
+    text-decoration: none;
+    transition: all 0.4s;
+}
+.footer_politic:hover {
+    color: #fff;
 }
 .footer_soc {
     display: flex;
@@ -1233,6 +1258,10 @@ footer {
     justify-content: center;
     border-radius: 50%;
     background: #8FFF00;
+    transition: all 0.4s;
+}
+.footer_soc a:hover {
+    transform: translateY(-7px);
 }
 .footer_phone {
     display: block;
@@ -1242,4 +1271,63 @@ footer {
     font-weight: 400;
     line-height: 1.25; 
     text-decoration: none;
+    transition: all 0.4s;
 }
+.footer_phone:hover {
+    color: #8F8F8F;
+}
+
+.modal {
+    display: none;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.fancybox__content>.carousel__button.is-close {
+    top: 5px;
+    right: 5px;
+}
+.fancybox__content {
+    padding: 50px 20px 20px;
+}
+.modal-title {
+    font-family: 'druk';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.25;
+    text-align: center;
+    color: var(--text_color);
+    margin-bottom: 20px;
+}
+.modal-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    color: var(--text_color);
+    margin-bottom: 50px;
+}
+.modal form .line .field input {
+    border: 1px solid #000;
+}
+.modal_button {
+    border-radius: 63px;
+    background: rgb(143, 255, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--text_color);
+    font-size: var(--font_size);
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    width: 289px;
+    height: 58px;
+    text-decoration: none;
+    margin: 0 auto;
+    transition: all 0.4s;
+}
+.modal_button:hover {
+    background: #7ddb05;
+}
+
