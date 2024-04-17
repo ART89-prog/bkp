@@ -919,7 +919,6 @@ header .menu .item + .item {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.25;
-    letter-spacing: -1%;
     text-align: center;
 }
 .client_item {
@@ -936,8 +935,15 @@ header .menu .item + .item {
     font-size: 20px;
     font-weight: 700;
     line-height: 1.25;
-    text-align: center;
+    text-align: center;   
     margin-bottom: 30px;
+}
+.client_desc {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: -0.1px;
 }
 
 .swiper {
@@ -1022,6 +1028,7 @@ header .menu .item + .item {
     background: #8FFF00;
 }
 .client_btn {
+    font-family: "Open Sans";
     border-radius: 63px;
     background: rgb(143, 255, 0);
     display: flex;
@@ -1030,7 +1037,7 @@ header .menu .item + .item {
     align-items: center;
     color: var(--text_color);
     font-size: var(--font_size);
-    font-weight: 700;
+    font-weight: 600;
     line-height: 20px;
     text-align: center;
     width: 313px;
@@ -1202,6 +1209,7 @@ form .line .field textarea:-ms-input-placeholder {
 	color: #CBCBCB;
 }
 .callback button {
+    font-family: "Open Sans";
     border-radius: 63px;
     background: rgb(143, 255, 0);
     display: flex;
@@ -1210,7 +1218,7 @@ form .line .field textarea:-ms-input-placeholder {
     align-items: center;
     color: var(--text_color);
     font-size: var(--font_size);
-    font-weight: 500;
+    font-weight: 600;
     line-height: 20px;
     text-align: center;
     width: 297px;
