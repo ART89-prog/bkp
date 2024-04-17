@@ -4,6 +4,12 @@
         --font_size_title: 28px;
         --font_size: 16px;
     }
+    header .mob_menu_btn {
+        top: 13px;
+    }
+    .menu_open header .close_btn {
+        top: 4px;
+    }
     .case .swiper-button-prev,
     .case .swiper-button-next {
         display: none;
@@ -24,7 +30,7 @@
         height: 41px;
         right: 50%;
         top: 100%;
-        transform: translateX(22px);
+        transform: translateX(11px);
         background: url(../images/arrow2.svg);
     }
     .step_item:nth-child(2)::after {
@@ -34,11 +40,11 @@
         height: 41px;
         right: 50%;
         top: 100%;
-        transform: translateX(22px);
+        transform: translateX(11px);
         background: url(../images/arrow2.svg);
     }
     .step_item:nth-child(3)::after {
-        transform: translateX(22px);
+        transform: translateX(11px);
     }
     .step_item:nth-child(4)::after {
         display: none;
@@ -50,7 +56,7 @@
         height: 41px;
         right: 50%;
         top: 100%;
-        transform: translateX(22px);
+        transform: translateX(11px);
         background: url(../images/arrow2.svg);
     }
     .step_item:nth-child(5) {
