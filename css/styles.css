@@ -340,7 +340,7 @@ header .menu {
 }
 header .menu .item a {
     text-decoration: none;
-    color: #131313;
+    color: var(--text_color);
     font-family: var(--font_family);
     font-size: 15px;
     font-style: normal;
@@ -357,7 +357,7 @@ header .menu .item:hover a {
     text-shadow: 0 0 .65px var(--text_color), 0 0 .65px var(--text_color);
 }
 .header_text {
-    color: #131313;
+    color: var(--text_color);
     font-family: var(--font_family);
     font-size: 15px;
     font-style: normal;
@@ -422,7 +422,7 @@ header .menu .item + .item {
     font-weight: 400;
     line-height: 1.25;
     text-decoration: none; 
-    color: #131313;
+    color: var(--text_color);
     transition: all .4s;
 }
 .header_contact-phone:hover {
@@ -777,7 +777,7 @@ header .menu .item + .item {
     height: 41px;
     right: 50%;
     bottom: -41px;
-    transform: translateX(11px);
+    transform: translateX(22px);
     background: url(../images/arrow2.svg);
 }
 .step_item:nth-child(4)::after {
@@ -1140,7 +1140,7 @@ form .line .field input {
     border-radius: 40px;
     background: rgb(255, 255, 255);
     border: none;
-    color: #131313;
+    color: var(--text_color);
     font-size: 18px;
     font-weight: 400;
     line-height: 1.25;
@@ -1154,7 +1154,7 @@ form .line .field textarea {
     border-radius: 40px;
     background: rgb(255, 255, 255);
     border: none;
-    color: #CBCBCB;
+    color: var(--text_color);
     font-size: 18px;
     font-weight: 400;
     line-height: 60px;
@@ -1216,7 +1216,7 @@ form .line .field textarea:-ms-input-placeholder {
 
 footer {
     padding: 78px 0 100px;
-    background: #131313;
+    background: var(--text_color);
 }
 .footer_items {
     display: flex;
@@ -1275,6 +1275,9 @@ footer {
 }
 .footer_phone:hover {
     color: #8F8F8F;
+}
+.footer_mob {
+    display: none;
 }
 
 .modal {

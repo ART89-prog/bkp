@@ -64,7 +64,7 @@ $(() => {
         spaceBetween: 40,
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 20
             },
             480: {
@@ -76,7 +76,7 @@ $(() => {
                     clickable: true,
                 }
             },
-            640: {
+            767: {
                 slidesPerView: 3,                
                 spaceBetween: 40
             }
@@ -90,7 +90,7 @@ $(() => {
         spaceBetween: 40,
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
                 spaceBetween: 20
             },
             480: {
@@ -102,7 +102,7 @@ $(() => {
                     clickable: true,
                 }
             },
-            640: {
+            767: {
                 slidesPerView: 3,               
                 spaceBetween: 40
             }
@@ -116,7 +116,7 @@ $(() => {
 		spaceBetween: 40,
 		breakpoints: {
 		  320: {
-			slidesPerView: 1,
+			slidesPerView: 2,
 			spaceBetween: 20
 		  },
 		  480: {
@@ -128,7 +128,7 @@ $(() => {
 				clickable: true,
 			  }
 		  },
-		  640: {
+		  767: {
 			slidesPerView: 3,		
 			spaceBetween: 40
 		  }
@@ -147,24 +147,33 @@ $(() => {
 			slidesPerView: 1
 		  },
 		  480: {
-			slidesPerView: 1
-		  },
-		  640: {
 			slidesPerView: 1,
-			pagination: {
+            pagination: {
 				el: '.swiper-pagination',
 				clickable: true,
 			  },
+		  },
+		  767: {
+			slidesPerView: 1,			
 			spaceBetween: 0
 		  }
 		}
 	  })
 
 
+     
 
-    $('input[type=tel]').inputmask('+7 (999) 999-99-99')
+      
+	const phoneInputs = document.querySelectorAll('input[type=tel]')
 
-
+	if (phoneInputs) {
+		phoneInputs.forEach(el => {
+			IMask(el, {
+				mask: '+{7} (000) 000-00-00',
+				lazy: true
+			})
+		})
+	}
 
 
     // Скрол к пунктам меню

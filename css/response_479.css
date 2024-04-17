@@ -1,5 +1,47 @@
 @media (max-width: 479px) {
 
+    .first-section_title {
+        font-size: 20px;
+    }
+    .modal-text {
+        margin-bottom: 30px;
+    }
+    .modal_button {
+        width: 100%;
+    }
+    .training_title {
+        font-size: 22px;
+    }
+    .advantages_items {
+        gap: 100px;
+    }
+    .advantages_items > * {
+        flex-direction: column;
+        padding: 0px;
+    }
+    .advantages_item {
+        margin-left: 0px;
+        gap: 0;
+    }
+    .advantages_item-img {
+        margin-left: 0;
+        margin-top: -67px;
+        margin-left: 30px;
+    }
+    .advantages_item-info {
+        padding: 30px;
+    }
+    .client_item {
+        min-height: 62px;
+        padding: 10px;
+    }
+    .client_item img {
+        width: 100%;
+        height: auto;
+    }
+
+
+
   
 
 }
