@@ -1074,6 +1074,14 @@ header .menu .item + .item {
 	-moz-filter: grayscale(1);
 	-o-filter: grayscale(1);
 }
+.ymaps-2-1-79-map ymaps {
+    background-image: linear-gradient(0deg, black, transparent);
+    background-blend-mode: exclusion, hard-light;
+}
+.ymaps-2-1-79-map-copyrights-promo,
+.ymaps-2-1-79-controls__toolbar {
+    display: none;
+}
 .callback_contacts {
     padding: 20px;
     border-radius: 20px;
