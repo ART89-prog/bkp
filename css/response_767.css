@@ -127,9 +127,19 @@
     .step_title {
         margin-bottom: 40px;
     }
-    .swiper-pagination {
+    .case .swiper {
+        padding-bottom: 40px;
+    }
+    .case .swiper .swiper-pagination,
+    .client_items .swiper-pagination,
+    .client_items2 .swiper-pagination,
+    .client_items3 .swiper-pagination {
         display: flex;
     }
+    .client_btn {
+        margin: 40px auto 20px;
+    }
+    
 
 
 

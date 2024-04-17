@@ -1012,6 +1012,8 @@ header .menu .item + .item {
     justify-content: center;
     background: #F2F3F7;
     left: 0;
+    top: 50%;
+    transform: translateY(-20px);
 }
 .swiper-button-next {
     width: 60px;
@@ -1022,6 +1024,8 @@ header .menu .item + .item {
     justify-content: center;
     background: #F2F3F7;
     right: 0;
+    top: 50%;
+    transform: translateY(-20px);
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
@@ -1356,7 +1360,10 @@ footer {
 .modal_button:hover {
     background: #7ddb05;
 }
-.swiper-pagination {
+.case .swiper .swiper-pagination,
+.client_items .swiper-pagination,
+.client_items2 .swiper-pagination,
+.client_items3 .swiper-pagination {
     display: none;
 }
 

@@ -61,6 +61,10 @@ $(() => {
     const swiper = new Swiper('.client_items .swiper', {
         slidesPerView: 3,
         allowTouchMove: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },	
         spaceBetween: 40,
         breakpoints: {
             320: {
@@ -70,11 +74,7 @@ $(() => {
             480: {
                 slidesPerView: 2,
                 spaceBetween: 30,
-                allowTouchMove: true,
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                }
+                allowTouchMove: true
             },
             767: {
                 slidesPerView: 3,                
@@ -87,6 +87,10 @@ $(() => {
     const swiper2 = new Swiper('.client_items2 .swiper', {
         slidesPerView: 3,
         allowTouchMove: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },	
         spaceBetween: 40,
         breakpoints: {
             320: {
@@ -96,11 +100,7 @@ $(() => {
             480: {
                 slidesPerView: 2,
                 spaceBetween: 30,
-                allowTouchMove: true, 
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                }
+                allowTouchMove: true
             },
             767: {
                 slidesPerView: 3,               
@@ -113,6 +113,10 @@ $(() => {
     const swiper3 = new Swiper('.client_items3 .swiper', {
 		slidesPerView: 3,
 		allowTouchMove: false,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },	
 		spaceBetween: 40,
 		breakpoints: {
 		  320: {
@@ -122,11 +126,7 @@ $(() => {
 		  480: {
 			slidesPerView: 2,
 			spaceBetween: 30,
-            allowTouchMove: true,	
-            pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			  }
+            allowTouchMove: true            
 		  },
 		  767: {
 			slidesPerView: 3,		
@@ -141,19 +141,23 @@ $(() => {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
-          },
+        }, 
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },	  
 		breakpoints: {
 		  320: {
 			slidesPerView: 1
 		  },
 		  480: {
-			slidesPerView: 1,
-            pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			  },
+			slidesPerView: 1,                     
 		  },
 		  767: {
+			slidesPerView: 1,	            	
+			spaceBetween: 0
+		  },
+		  1023: {
 			slidesPerView: 1,			
 			spaceBetween: 0
 		  }
@@ -215,7 +219,7 @@ $(() => {
             if (!fakeResize2) {
                 fakeResize2 = true
 
-                if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+                if (windowW < 390) document.getElementsByTagName('meta')['viewport'].content = 'width=390, user-scalable=no'
             } else {
                 fakeResize = false
                 fakeResize2 = true
