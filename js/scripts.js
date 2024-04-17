@@ -60,7 +60,6 @@ $(() => {
 
     const swiper = new Swiper('.client_items .swiper', {
         slidesPerView: 3,
-        // allowTouchMove: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -69,13 +68,11 @@ $(() => {
         breakpoints: {
             320: {
                 slidesPerView: 2,
-                spaceBetween: 20,
-                // allowTouchMove: true
+                spaceBetween: 20
             },
             480: {
                 slidesPerView: 2,
-                spaceBetween: 30,
-                // allowTouchMove: true
+                spaceBetween: 30
             },
             767: {
                 slidesPerView: 3,                
@@ -87,7 +84,6 @@ $(() => {
 
     const swiper2 = new Swiper('.client_items2 .swiper', {
         slidesPerView: 3,
-        // allowTouchMove: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -96,13 +92,11 @@ $(() => {
         breakpoints: {
             320: {
                 slidesPerView: 2,
-                spaceBetween: 20,
-                // allowTouchMove: true
+                spaceBetween: 20
             },
             480: {
                 slidesPerView: 2,
-                spaceBetween: 30,
-                // allowTouchMove: true
+                spaceBetween: 30
             },
             767: {
                 slidesPerView: 3,               
@@ -114,7 +108,6 @@ $(() => {
 
     const swiper3 = new Swiper('.client_items3 .swiper', {
 		slidesPerView: 3,
-		// allowTouchMove: false,
         pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -124,12 +117,10 @@ $(() => {
 		  320: {
 			slidesPerView: 2,
 			spaceBetween: 20,
-            // allowTouchMove: true
 		  },
 		  480: {
 			slidesPerView: 2,
-			spaceBetween: 30,
-            // allowTouchMove: true            
+			spaceBetween: 30
 		  },
 		  767: {
 			slidesPerView: 3,		
