@@ -190,7 +190,7 @@ button {
     overflow: hidden;
     flex-direction: column;
 
-    min-width: 360px;
+    min-width: 390px;
     min-height: 100%;
 
     background: var(--bg);
@@ -1300,6 +1300,9 @@ footer {
 .footer_item:nth-child(2) {
     margin-top: 24px;
     margin-left: -26px;
+}
+.footer_item:nth-child(3) {
+    margin-top: 24px;
 }
 
 
